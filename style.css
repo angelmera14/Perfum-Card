@@ -90,3 +90,34 @@ body{
     background-color:hsl(177, 91%, 21%);
     color: hsl(30, 38%, 92%);
 }
+/* Media Query para dispositivos móviles */
+@media (max-width: 520px) {
+    .trabajo {
+        flex-direction: column; 
+        padding: 10% 0 10% 0;
+    }
+
+    .tarjeta-img{
+        padding: 0px;
+        margin: 100% 0 0 0;
+        border-radius: 10px 10px 0 0; 
+    }
+
+    .tarjeta-img img {
+        padding: 0px;
+        aspect-ratio: 1.5;
+        object-fit: cover;
+        width:70%;
+        border-radius: 10px 10px 0 0; }
+
+    .tarjeta {
+        padding: 0px;
+        margin:  0 0 100% 0; /* Ajustamos el margen para que haya espacio entre las tarjetas */
+        width: 70%; /* Ocupa el ancho completo en pantallas pequeñas */
+        border-radius: 0  0 10px 10px; /* Dejamos los bordes redondeados para pantallas pequeñas */
+    }
+
+    .boton-verde{
+        padding:10px   
+    }
+}
